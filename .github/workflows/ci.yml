@@ -2,7 +2,11 @@ name: CI
 
 on:
   push:
+    branches:
+      - master
   pull_request:
+    branches:
+      - master
   workflow_dispatch:
 
 concurrency:
@@ -14,7 +18,7 @@ permissions:
 
 jobs:
   validate:
-    name: Validate README Tracker
+    name: Validate Repository
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -25,5 +29,14 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
+      - name: Compile tracker script
+        run: python3 -m py_compile scripts/generate_readme.py
+
+      - name: Validate Excalidraw files
+        run: |
+          find concepts templates problems -name '*.excalidraw' -print0 | \
+            xargs -0 -r -n1 python3 -m json.tool >/dev/null
+
       - name: Check generated README
+        if: github.event_name != 'push'
         run: python3 scripts/generate_readme.py --check

@@ -2,6 +2,8 @@ name: Update Progress
 
 on:
   push:
+    branches:
+      - master
     paths:
       - 'concepts/**'
       - 'problems/**'

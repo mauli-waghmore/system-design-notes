@@ -1,6 +1,6 @@
 <div align="center">
 
-# System Design Notes
+# 🧠 System Design Notes
 
 ##### Deep system design understanding through Excalidraw-first concept notes and visual design walkthroughs.
 
@@ -10,20 +10,20 @@
 [![Excalidraw](https://img.shields.io/badge/Diagrams-Excalidraw-6965DB?style=flat-square)](https://excalidraw.com)
 [![License](https://img.shields.io/badge/License-MIT-3DA639?style=flat-square)](LICENSE)
 
-[**Progress**](#-progress) &nbsp;·&nbsp; [**Concepts**](#-concept-index) &nbsp;·&nbsp; [**Problems**](#-design-problem-index) &nbsp;·&nbsp; [**Workflow**](#-workflow) &nbsp;·&nbsp; [**Structure**](#-project-structure)
+[**📊 Progress**](#-progress) &nbsp;·&nbsp; [**🧩 Concepts**](#-concept-index) &nbsp;·&nbsp; [**🏗️ Problems**](#-design-problem-index) &nbsp;·&nbsp; [**🚀 Workflow**](#-workflow) &nbsp;·&nbsp; [**🗂️ Structure**](#-project-structure)
 
 </div>
 
 ---
 
-## Progress
+## 📊 Progress
 
 <!-- STATS:START -->
 <div align="center">
 
-**1** concepts &nbsp;·&nbsp; **0** designs &nbsp;·&nbsp; **1** diagrams &nbsp;·&nbsp; **0** complete &nbsp;·&nbsp; **0**-day streak &nbsp;·&nbsp; **0** longest &nbsp;·&nbsp; **0** / 30 active
+🧠 **1** concepts &nbsp;·&nbsp; 🏗️ **0** designs &nbsp;·&nbsp; 🖼️ **1** diagrams &nbsp;·&nbsp; ✅ **0** complete &nbsp;·&nbsp; 🔥 **1**-day streak &nbsp;·&nbsp; 🏆 **1** longest &nbsp;·&nbsp; 🗓️ **1** / 30 active
 
-**Daily activity** &nbsp;·&nbsp; 2026-05-24 -> 2026-06-22
+🔥 **Daily activity** &nbsp;·&nbsp; 2026-05-24 → 2026-06-22
 
 <img src="assets/activity.svg" alt="30-day activity calendar" width="320">
 
@@ -70,7 +70,7 @@ xychart-beta
 
 <div align="center"><sub>Everything above is generated from <code>concepts/</code> and <code>problems/</code> on every push - never edited by hand.</sub></div>
 
-## Concept index
+## 🧩 Concept index
 
 <!-- CONCEPTS:START -->
 <table width="100%">
@@ -87,19 +87,19 @@ xychart-beta
       <td align="center">01</td>
       <td><a href="https://excalidraw.com/#url=https%3A%2F%2Fraw.githubusercontent.com%2Fmauli-waghmore%2Fsystem-design-notes%2Fmaster%2Fconcepts%2Fwhat-is-system-design.excalidraw">What Is System Design?</a></td>
       <td align="center"><code>Draft</code></td>
-      <td align="center">-</td>
+      <td align="center">2026-06-22</td>
     </tr>
   </tbody>
 </table>
 <!-- CONCEPTS:END -->
 
-## Design problem index
+## 🏗️ Design problem index
 
 <!-- PROBLEMS:START -->
 _No design problems yet - add folders under_ `problems/`.
 <!-- PROBLEMS:END -->
 
-## Learning model
+## 🧭 Learning model
 
 This repo has two lanes:
 
@@ -127,7 +127,7 @@ This repo has two lanes:
 
 Concepts and problem designs are visual-first. The explanation should live inside the Excalidraw canvas so the notes, flow, and drawing can be reviewed together.
 
-## Content standard
+## ✅ Content standard
 
 Use [templates/concept-template.excalidraw](templates/concept-template.excalidraw) for every concept canvas so the structure stays consistent.
 
@@ -153,7 +153,7 @@ Each design problem should cover:
 - Trade-offs and alternatives
 - Final Excalidraw diagram with explanation inside the canvas
 
-## Workflow
+## 🚀 Workflow
 
 ```bash
 python3 scripts/generate_readme.py          # rebuild progress, indexes, and activity SVG
@@ -168,7 +168,7 @@ When adding new content:
 4. Run `python3 scripts/generate_readme.py`.
 5. Revisit older notes as understanding improves.
 
-## Naming
+## 🏷️ Naming
 
 Use lowercase, hyphen-separated names:
 
@@ -179,7 +179,7 @@ problems/design-url-shortener/
 problems/design-whatsapp/
 ```
 
-## Project structure
+## 🗂️ Project structure
 
 <details>
 <summary><b>Repository layout</b></summary>
@@ -212,7 +212,7 @@ system-design-notes/
 
 </details>
 
-## Status legend
+## 📌 Status legend
 
 <table width="100%">
   <thead>
@@ -237,7 +237,7 @@ system-design-notes/
   </tbody>
 </table>
 
-## License
+## 📜 License
 
 MIT - see [LICENSE](LICENSE).
 

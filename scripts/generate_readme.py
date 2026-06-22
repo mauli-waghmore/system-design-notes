@@ -372,9 +372,9 @@ def build_progress(concepts, problems, today=None):
     svg, start, end = activity_svg(days, today)
 
     stat_line = (
-        "**{}** concepts &nbsp;·&nbsp; **{}** designs &nbsp;·&nbsp; **{}** diagrams "
-        "&nbsp;·&nbsp; **{}** complete &nbsp;·&nbsp; **{}**-day streak "
-        "&nbsp;·&nbsp; **{}** longest &nbsp;·&nbsp; **{}** / 30 active"
+        "🧠 **{}** concepts &nbsp;·&nbsp; 🏗️ **{}** designs &nbsp;·&nbsp; 🖼️ **{}** diagrams "
+        "&nbsp;·&nbsp; ✅ **{}** complete &nbsp;·&nbsp; 🔥 **{}**-day streak "
+        "&nbsp;·&nbsp; 🏆 **{}** longest &nbsp;·&nbsp; 🗓️ **{}** / 30 active"
     ).format(len(concepts), len(problems), diagrams, complete, streak, longest, active_in_window)
 
     concept_counts = status_counts(concepts)
@@ -383,7 +383,7 @@ def build_progress(concepts, problems, today=None):
     dashboard = (
         '<div align="center">\n\n'
         + stat_line + "\n\n"
-        + "**Daily activity** &nbsp;·&nbsp; " + start.isoformat() + " -> " + end.isoformat() + "\n\n"
+        + "🔥 **Daily activity** &nbsp;·&nbsp; " + start.isoformat() + " → " + end.isoformat() + "\n\n"
         + '<img src="assets/activity.svg" alt="30-day activity calendar" width="320">\n\n'
         + "</div>"
     )
