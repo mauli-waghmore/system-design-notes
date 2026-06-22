@@ -1,0 +1,44 @@
+name: Update Progress
+
+on:
+  push:
+    paths:
+      - 'concepts/**'
+      - 'problems/**'
+      - 'scripts/generate_readme.py'
+      - '.github/workflows/update-stats.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-stats-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  stats:
+    name: Regenerate README Progress
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Regenerate README
+        run: python3 scripts/generate_readme.py
+
+      - name: Commit updated README
+        run: |
+          git add README.md assets/activity.svg
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore: update progress [skip ci]"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
