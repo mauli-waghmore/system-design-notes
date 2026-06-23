@@ -29,37 +29,6 @@
 
 </div>
 
-<table width="100%" style="width: 100%; table-layout: fixed;">
-  <thead>
-    <tr>
-      <th width="14%">Lane</th>
-      <th width="6%" align="right">Draft</th>
-      <th width="7%" align="right">Review</th>
-      <th width="8%" align="right">Complete</th>
-      <th width="6%" align="right">Total</th>
-      <th width="59%">Next action</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td width="14%">Concepts</td>
-      <td width="6%" align="right">0</td>
-      <td width="7%" align="right">0</td>
-      <td width="8%" align="right">2</td>
-      <td width="6%" align="right">2</td>
-      <td width="59%">Keep every concept visual, framed, and reviewable.</td>
-    </tr>
-    <tr>
-      <td width="14%">Design problems</td>
-      <td width="6%" align="right">0</td>
-      <td width="7%" align="right">0</td>
-      <td width="8%" align="right">0</td>
-      <td width="6%" align="right">0</td>
-      <td width="59%">Add problem folders after core concept foundations are ready.</td>
-    </tr>
-  </tbody>
-</table>
-
 ```mermaid
 %%{init: {"xyChart": {"plotColorPalette": ["#0969da", "#3DA639"]}}}%%
 xychart-beta

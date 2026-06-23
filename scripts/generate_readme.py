@@ -404,9 +404,6 @@ def build_progress(concepts, problems, today=None):
         "&nbsp;·&nbsp; 🏆 **{}** longest &nbsp;·&nbsp; 🗓️ **{}** / 30 active"
     ).format(len(concepts), len(problems), diagrams, complete, streak, longest, active_in_window)
 
-    concept_counts = status_counts(concepts)
-    problem_counts = status_counts(problems)
-
     dashboard = (
         '<div align="center">\n\n'
         + stat_line + "\n\n"
@@ -415,47 +412,7 @@ def build_progress(concepts, problems, today=None):
         + "</div>"
     )
 
-    tables = (
-        '<table width="100%" style="width: 100%; table-layout: fixed;">\n'
-        "  <thead>\n"
-        "    <tr>\n"
-        "      <th width=\"14%\">Lane</th>\n"
-        "      <th width=\"6%\" align=\"right\">Draft</th>\n"
-        "      <th width=\"7%\" align=\"right\">Review</th>\n"
-        "      <th width=\"8%\" align=\"right\">Complete</th>\n"
-        "      <th width=\"6%\" align=\"right\">Total</th>\n"
-        "      <th width=\"59%\">Next action</th>\n"
-        "    </tr>\n"
-        "  </thead>\n"
-        "  <tbody>\n"
-        "    <tr>\n"
-        "      <td width=\"14%\">Concepts</td>\n"
-        "      <td width=\"6%\" align=\"right\">{Draft}</td>\n"
-        "      <td width=\"7%\" align=\"right\">{Review}</td>\n"
-        "      <td width=\"8%\" align=\"right\">{Complete}</td>\n"
-        "      <td width=\"6%\" align=\"right\">" + str(len(concepts)) + "</td>\n"
-        "      <td width=\"59%\">Keep every concept visual, framed, and reviewable.</td>\n"
-        "    </tr>\n"
-        "    <tr>\n"
-        "      <td width=\"14%\">Design problems</td>\n"
-        "      <td width=\"6%\" align=\"right\">{pDraft}</td>\n"
-        "      <td width=\"7%\" align=\"right\">{pReview}</td>\n"
-        "      <td width=\"8%\" align=\"right\">{pComplete}</td>\n"
-        "      <td width=\"6%\" align=\"right\">" + str(len(problems)) + "</td>\n"
-        "      <td width=\"59%\">Add problem folders after core concept foundations are ready.</td>\n"
-        "    </tr>\n"
-        "  </tbody>\n"
-        "</table>"
-    ).format(
-        Draft=concept_counts.get("Draft", 0),
-        Review=concept_counts.get("Review", 0),
-        Complete=concept_counts.get("Complete", 0),
-        pDraft=problem_counts.get("Draft", 0),
-        pReview=problem_counts.get("Review", 0),
-        pComplete=problem_counts.get("Complete", 0),
-    )
-
-    return dashboard + "\n\n" + tables + "\n\n" + status_graph(concepts, problems), svg
+    return dashboard + "\n\n" + status_graph(concepts, problems), svg
 
 
 def build_concept_index(concepts):
