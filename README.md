@@ -29,36 +29,33 @@
 
 </div>
 
-<table width="100%">
+<table width="100%" style="width: 100%; table-layout: fixed;">
   <thead>
     <tr>
-      <th>Lane</th>
-      <th align="right">Draft</th>
-      <th align="right">Review</th>
-      <th align="right">Complete</th>
-      <th align="right">Total</th>
-      <th>Primary artifact</th>
-      <th>Next action</th>
+      <th width="14%">Lane</th>
+      <th width="6%" align="right">Draft</th>
+      <th width="7%" align="right">Review</th>
+      <th width="8%" align="right">Complete</th>
+      <th width="6%" align="right">Total</th>
+      <th width="59%">Next action</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Concepts</td>
-      <td align="right">0</td>
-      <td align="right">0</td>
-      <td align="right">2</td>
-      <td align="right">2</td>
-      <td><code>concepts/*.excalidraw</code></td>
-      <td>Keep every concept visual, framed, and reviewable.</td>
+      <td width="14%">Concepts</td>
+      <td width="6%" align="right">0</td>
+      <td width="7%" align="right">0</td>
+      <td width="8%" align="right">2</td>
+      <td width="6%" align="right">2</td>
+      <td width="59%">Keep every concept visual, framed, and reviewable.</td>
     </tr>
     <tr>
-      <td>Design problems</td>
-      <td align="right">0</td>
-      <td align="right">0</td>
-      <td align="right">0</td>
-      <td align="right">0</td>
-      <td><code>problems/*/diagram.excalidraw</code></td>
-      <td>Add problem folders after core concept foundations are ready.</td>
+      <td width="14%">Design problems</td>
+      <td width="6%" align="right">0</td>
+      <td width="7%" align="right">0</td>
+      <td width="8%" align="right">0</td>
+      <td width="6%" align="right">0</td>
+      <td width="59%">Add problem folders after core concept foundations are ready.</td>
     </tr>
   </tbody>
 </table>

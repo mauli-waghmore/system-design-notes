@@ -1,8 +1,40 @@
-.DS_Store
+# IDEs
 .idea/
+*.iml
 .vscode/
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.mypy_cache/
 
+# Build outputs
+build/
+out/
+bin/
+target/
+
+# Java / Kotlin artifacts
+*.class
+*.jar
+*.war
+*.ear
+.kotlin/
+
+# Gradle
+.gradle/
+.gradle-cache/
+gradle-app.setting
+!gradle-wrapper.jar
+
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
