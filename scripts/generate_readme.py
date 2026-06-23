@@ -5,8 +5,13 @@ import os
 import re
 import subprocess
 import sys
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime, timedelta
 from urllib.parse import quote
+
+try:
+    from zoneinfo import ZoneInfo
+except ImportError:
+    ZoneInfo = None
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONCEPTS = os.path.join(ROOT, "concepts")
@@ -15,6 +20,7 @@ README = os.path.join(ROOT, "README.md")
 ACTIVITY_SVG = os.path.join(ROOT, "assets", "activity.svg")
 GITHUB_REPO = "mauli-waghmore/system-design-notes"
 GITHUB_BRANCH = "master"
+TRACKING_TIMEZONE = "Asia/Kolkata"
 
 WINDOW_DAYS = 30
 STATUS_VALUES = ("Draft", "Review", "Complete")
@@ -55,6 +61,27 @@ def excalidraw_open_url(rel_path):
 def read_text(path):
     with open(path, encoding="utf-8") as handle:
         return handle.read()
+
+
+def tracking_zone():
+    if ZoneInfo is None:
+        return None
+    return ZoneInfo(TRACKING_TIMEZONE)
+
+
+def today_in_tracking_zone():
+    zone = tracking_zone()
+    if zone is None:
+        return date.today()
+    return datetime.now(zone).date()
+
+
+def iso_to_tracking_date(value):
+    parsed = datetime.fromisoformat(value)
+    zone = tracking_zone()
+    if zone is None:
+        return parsed.date().isoformat()
+    return parsed.astimezone(zone).date().isoformat()
 
 
 def title_from_markdown(path, fallback):
@@ -118,14 +145,14 @@ def status_from_excalidraw(path):
 def added_date(rel_path):
     try:
         result = subprocess.run(
-            ["git", "log", "--diff-filter=A", "--follow", "--format=%as", "--", rel_path],
+            ["git", "log", "--diff-filter=A", "--format=%aI", "--", rel_path],
             cwd=ROOT,
             capture_output=True,
             text=True,
             check=False,
         )
         lines = [line for line in result.stdout.splitlines() if line.strip()]
-        return lines[-1] if lines else ""
+        return iso_to_tracking_date(lines[-1]) if lines else ""
     except Exception:
         return ""
 
@@ -361,7 +388,7 @@ def status_graph(concepts, problems):
 
 def build_progress(concepts, problems, today=None):
     if today is None:
-        today = datetime.now(timezone.utc).date()
+        today = today_in_tracking_zone()
     all_items = concepts + problems
     days = active_dates(all_items)
     streak = current_streak(days, today)

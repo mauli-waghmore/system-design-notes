@@ -21,7 +21,7 @@
 <!-- STATS:START -->
 <div align="center">
 
-🧠 **2** concepts &nbsp;·&nbsp; 🏗️ **0** designs &nbsp;·&nbsp; 🖼️ **2** diagrams &nbsp;·&nbsp; ✅ **2** complete &nbsp;·&nbsp; 🔥 **1**-day streak &nbsp;·&nbsp; 🏆 **1** longest &nbsp;·&nbsp; 🗓️ **1** / 30 active
+🧠 **2** concepts &nbsp;·&nbsp; 🏗️ **0** designs &nbsp;·&nbsp; 🖼️ **2** diagrams &nbsp;·&nbsp; ✅ **2** complete &nbsp;·&nbsp; 🔥 **2**-day streak &nbsp;·&nbsp; 🏆 **2** longest &nbsp;·&nbsp; 🗓️ **2** / 30 active
 
 🔥 **Daily activity** &nbsp;·&nbsp; 2026-05-25 → 2026-06-23
 
@@ -93,19 +93,19 @@ xychart-beta
   <tbody>
     <tr>
       <td align="center">01</td>
-      <td><a href="https://excalidraw.com/#url=https%3A%2F%2Fraw.githubusercontent.com%2Fmauli-waghmore%2Fsystem-design-notes%2Fmaster%2Fconcepts%2Fhorizontal-vs-vertical-scaling.excalidraw">Horizontal vs. Vertical Scaling</a></td>
-      <td>Visual canvas + explanation</td>
-      <td align="center"><code>Complete</code></td>
-      <td align="center">2026-06-22</td>
-      <td><code>concepts/horizontal-vs-vertical-scaling.excalidraw</code></td>
-    </tr>
-    <tr>
-      <td align="center">02</td>
       <td><a href="https://excalidraw.com/#url=https%3A%2F%2Fraw.githubusercontent.com%2Fmauli-waghmore%2Fsystem-design-notes%2Fmaster%2Fconcepts%2Fwhat-is-system-design.excalidraw">What Is System Design?</a></td>
       <td>Visual canvas + explanation</td>
       <td align="center"><code>Complete</code></td>
       <td align="center">2026-06-22</td>
       <td><code>concepts/what-is-system-design.excalidraw</code></td>
+    </tr>
+    <tr>
+      <td align="center">02</td>
+      <td><a href="https://excalidraw.com/#url=https%3A%2F%2Fraw.githubusercontent.com%2Fmauli-waghmore%2Fsystem-design-notes%2Fmaster%2Fconcepts%2Fhorizontal-vs-vertical-scaling.excalidraw">Horizontal vs. Vertical Scaling</a></td>
+      <td>Visual canvas + explanation</td>
+      <td align="center"><code>Complete</code></td>
+      <td align="center">2026-06-23</td>
+      <td><code>concepts/horizontal-vs-vertical-scaling.excalidraw</code></td>
     </tr>
   </tbody>
 </table>
