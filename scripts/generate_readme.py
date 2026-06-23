@@ -397,6 +397,8 @@ def build_progress(concepts, problems, today=None):
         "      <th align=\"right\">Review</th>\n"
         "      <th align=\"right\">Complete</th>\n"
         "      <th align=\"right\">Total</th>\n"
+        "      <th>Primary artifact</th>\n"
+        "      <th>Next action</th>\n"
         "    </tr>\n"
         "  </thead>\n"
         "  <tbody>\n"
@@ -406,6 +408,8 @@ def build_progress(concepts, problems, today=None):
         "      <td align=\"right\">{Review}</td>\n"
         "      <td align=\"right\">{Complete}</td>\n"
         "      <td align=\"right\">" + str(len(concepts)) + "</td>\n"
+        "      <td><code>concepts/*.excalidraw</code></td>\n"
+        "      <td>Keep every concept visual, framed, and reviewable.</td>\n"
         "    </tr>\n"
         "    <tr>\n"
         "      <td>Design problems</td>\n"
@@ -413,6 +417,8 @@ def build_progress(concepts, problems, today=None):
         "      <td align=\"right\">{pReview}</td>\n"
         "      <td align=\"right\">{pComplete}</td>\n"
         "      <td align=\"right\">" + str(len(problems)) + "</td>\n"
+        "      <td><code>problems/*/diagram.excalidraw</code></td>\n"
+        "      <td>Add problem folders after core concept foundations are ready.</td>\n"
         "    </tr>\n"
         "  </tbody>\n"
         "</table>"
@@ -437,8 +443,10 @@ def build_concept_index(concepts):
         "    <tr>",
         "      <th align=\"center\">#</th>",
         "      <th>Concept</th>",
+        "      <th>Format</th>",
         "      <th align=\"center\">Status</th>",
         "      <th align=\"center\">Added</th>",
+        "      <th>Source</th>",
         "    </tr>",
         "  </thead>",
         "  <tbody>",
@@ -451,8 +459,10 @@ def build_concept_index(concepts):
                 excalidraw_open_url(item["path"]),
                 html_cell(item["title"]),
             ),
+            "      <td>Visual canvas + explanation</td>",
             "      <td align=\"center\"><code>{}</code></td>".format(html_cell(item["status"])),
             "      <td align=\"center\">{}</td>".format(html_cell(item["date"] or "-")),
+            "      <td><code>{}</code></td>".format(html_cell(item["path"])),
             "    </tr>",
         ])
     rows.extend(["  </tbody>", "</table>"])
@@ -472,6 +482,7 @@ def build_problem_index(problems):
         "      <th align=\"center\">Diagram</th>",
         "      <th align=\"center\">Status</th>",
         "      <th align=\"center\">Added</th>",
+        "      <th>Source</th>",
         "    </tr>",
         "  </thead>",
         "  <tbody>",
@@ -486,6 +497,7 @@ def build_problem_index(problems):
             "      <td align=\"center\">{}</td>".format(diagram),
             "      <td align=\"center\"><code>{}</code></td>".format(html_cell(item["status"])),
             "      <td align=\"center\">{}</td>".format(html_cell(item["date"] or "-")),
+            "      <td><code>{}</code></td>".format(html_cell(item["folder"])),
             "    </tr>",
         ])
     rows.extend(["  </tbody>", "</table>"])

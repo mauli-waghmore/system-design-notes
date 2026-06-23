@@ -21,7 +21,7 @@
 <!-- STATS:START -->
 <div align="center">
 
-🧠 **1** concepts &nbsp;·&nbsp; 🏗️ **0** designs &nbsp;·&nbsp; 🖼️ **1** diagrams &nbsp;·&nbsp; ✅ **0** complete &nbsp;·&nbsp; 🔥 **1**-day streak &nbsp;·&nbsp; 🏆 **1** longest &nbsp;·&nbsp; 🗓️ **1** / 30 active
+🧠 **1** concepts &nbsp;·&nbsp; 🏗️ **0** designs &nbsp;·&nbsp; 🖼️ **1** diagrams &nbsp;·&nbsp; ✅ **1** complete &nbsp;·&nbsp; 🔥 **1**-day streak &nbsp;·&nbsp; 🏆 **1** longest &nbsp;·&nbsp; 🗓️ **1** / 30 active
 
 🔥 **Daily activity** &nbsp;·&nbsp; 2026-05-24 → 2026-06-22
 
@@ -37,15 +37,19 @@
       <th align="right">Review</th>
       <th align="right">Complete</th>
       <th align="right">Total</th>
+      <th>Primary artifact</th>
+      <th>Next action</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Concepts</td>
-      <td align="right">1</td>
       <td align="right">0</td>
       <td align="right">0</td>
       <td align="right">1</td>
+      <td align="right">1</td>
+      <td><code>concepts/*.excalidraw</code></td>
+      <td>Keep every concept visual, framed, and reviewable.</td>
     </tr>
     <tr>
       <td>Design problems</td>
@@ -53,6 +57,8 @@
       <td align="right">0</td>
       <td align="right">0</td>
       <td align="right">0</td>
+      <td><code>problems/*/diagram.excalidraw</code></td>
+      <td>Add problem folders after core concept foundations are ready.</td>
     </tr>
   </tbody>
 </table>
@@ -64,7 +70,7 @@ xychart-beta
     x-axis ["Concepts", "Problems"]
     y-axis "Items" 0 --> 2
     bar [1, 0]
-    bar [0, 0]
+    bar [1, 0]
 ```
 <!-- STATS:END -->
 
@@ -78,16 +84,20 @@ xychart-beta
     <tr>
       <th align="center">#</th>
       <th>Concept</th>
+      <th>Format</th>
       <th align="center">Status</th>
       <th align="center">Added</th>
+      <th>Source</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td align="center">01</td>
       <td><a href="https://excalidraw.com/#url=https%3A%2F%2Fraw.githubusercontent.com%2Fmauli-waghmore%2Fsystem-design-notes%2Fmaster%2Fconcepts%2Fwhat-is-system-design.excalidraw">What Is System Design?</a></td>
-      <td align="center"><code>Draft</code></td>
+      <td>Visual canvas + explanation</td>
+      <td align="center"><code>Complete</code></td>
       <td align="center">2026-06-22</td>
+      <td><code>concepts/what-is-system-design.excalidraw</code></td>
     </tr>
   </tbody>
 </table>
@@ -109,6 +119,7 @@ This repo has two lanes:
       <th>Lane</th>
       <th>Purpose</th>
       <th>Format</th>
+      <th>Tracking rule</th>
     </tr>
   </thead>
   <tbody>
@@ -116,11 +127,13 @@ This repo has two lanes:
       <td>Concepts</td>
       <td>Build deep understanding of individual building blocks like caching, load balancing, indexing, queues, consistency, partitioning, and rate limiting.</td>
       <td>One focused Excalidraw file per concept with explanation and drawing in the same canvas.</td>
+      <td>Tracked automatically from <code>concepts/*.excalidraw</code>.</td>
     </tr>
     <tr>
       <td>Problems</td>
       <td>Practice end-to-end system design using requirements, APIs, data model, architecture, scaling strategy, trade-offs, and failure handling.</td>
       <td>One folder per design problem with <code>README.md</code> and <code>diagram.excalidraw</code>.</td>
+      <td>Tracked automatically from valid folders under <code>problems/</code>.</td>
     </tr>
   </tbody>
 </table>
@@ -219,20 +232,28 @@ system-design-notes/
     <tr>
       <th>Status</th>
       <th>Meaning</th>
+      <th>When to use it</th>
+      <th>Next step</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><code>Draft</code></td>
       <td>First complete pass exists</td>
+      <td>The concept or design is understandable but may still need polish.</td>
+      <td>Review layout, examples, edge cases, and missing trade-offs.</td>
     </tr>
     <tr>
       <td><code>Review</code></td>
       <td>Needs cleanup, examples, or diagram review</td>
+      <td>The main content exists, but clarity or visual structure is still being improved.</td>
+      <td>Refine wording, fix diagrams, and verify the canvas opens cleanly.</td>
     </tr>
     <tr>
       <td><code>Complete</code></td>
       <td>Clear, consistent, and ready to revisit later</td>
+      <td>The note is ready for normal reading and interview revision.</td>
+      <td>Use it as reference material and update only when understanding improves.</td>
     </tr>
   </tbody>
 </table>
