@@ -5,7 +5,7 @@
 ##### Deep system design understanding through Excalidraw-first concept notes and visual design walkthroughs.
 
 [![CI](https://img.shields.io/github/actions/workflow/status/mauli-waghmore/system-design-notes/ci.yml?style=flat-square&label=CI&logo=github&logoColor=white)](https://github.com/mauli-waghmore/system-design-notes/actions/workflows/ci.yml)
-[![Concepts](https://img.shields.io/badge/Concepts-1-blue?style=flat-square)](#-concept-index)
+[![Concepts](https://img.shields.io/badge/Concepts-2-blue?style=flat-square)](#-concept-index)
 [![Designs](https://img.shields.io/badge/Designs-0-success?style=flat-square)](#-design-problem-index)
 [![Excalidraw](https://img.shields.io/badge/Diagrams-Excalidraw-6965DB?style=flat-square)](https://excalidraw.com)
 [![License](https://img.shields.io/badge/License-MIT-3DA639?style=flat-square)](LICENSE)
@@ -21,7 +21,7 @@
 <!-- STATS:START -->
 <div align="center">
 
-🧠 **1** concepts &nbsp;·&nbsp; 🏗️ **0** designs &nbsp;·&nbsp; 🖼️ **1** diagrams &nbsp;·&nbsp; ✅ **1** complete &nbsp;·&nbsp; 🔥 **1**-day streak &nbsp;·&nbsp; 🏆 **1** longest &nbsp;·&nbsp; 🗓️ **1** / 30 active
+🧠 **2** concepts &nbsp;·&nbsp; 🏗️ **0** designs &nbsp;·&nbsp; 🖼️ **2** diagrams &nbsp;·&nbsp; ✅ **2** complete &nbsp;·&nbsp; 🔥 **1**-day streak &nbsp;·&nbsp; 🏆 **1** longest &nbsp;·&nbsp; 🗓️ **1** / 30 active
 
 🔥 **Daily activity** &nbsp;·&nbsp; 2026-05-25 → 2026-06-23
 
@@ -46,8 +46,8 @@
       <td>Concepts</td>
       <td align="right">0</td>
       <td align="right">0</td>
-      <td align="right">1</td>
-      <td align="right">1</td>
+      <td align="right">2</td>
+      <td align="right">2</td>
       <td><code>concepts/*.excalidraw</code></td>
       <td>Keep every concept visual, framed, and reviewable.</td>
     </tr>
@@ -68,9 +68,9 @@
 xychart-beta
     title "Progress by lane"
     x-axis ["Concepts", "Problems"]
-    y-axis "Items" 0 --> 2
-    bar [1, 0]
-    bar [1, 0]
+    y-axis "Items" 0 --> 3
+    bar [2, 0]
+    bar [2, 0]
 ```
 <!-- STATS:END -->
 
@@ -98,6 +98,14 @@ xychart-beta
       <td align="center"><code>Complete</code></td>
       <td align="center">2026-06-22</td>
       <td><code>concepts/what-is-system-design.excalidraw</code></td>
+    </tr>
+    <tr>
+      <td align="center">02</td>
+      <td><a href="https://excalidraw.com/#url=https%3A%2F%2Fraw.githubusercontent.com%2Fmauli-waghmore%2Fsystem-design-notes%2Fmaster%2Fconcepts%2Fhorizontal-vs-vertical-scaling.excalidraw">Horizontal vs. Vertical Scaling</a></td>
+      <td>Visual canvas + explanation</td>
+      <td align="center"><code>Complete</code></td>
+      <td align="center">-</td>
+      <td><code>concepts/horizontal-vs-vertical-scaling.excalidraw</code></td>
     </tr>
   </tbody>
 </table>
