@@ -23,7 +23,7 @@
 
 🧠 **1** concepts &nbsp;·&nbsp; 🏗️ **0** designs &nbsp;·&nbsp; 🖼️ **1** diagrams &nbsp;·&nbsp; ✅ **1** complete &nbsp;·&nbsp; 🔥 **1**-day streak &nbsp;·&nbsp; 🏆 **1** longest &nbsp;·&nbsp; 🗓️ **1** / 30 active
 
-🔥 **Daily activity** &nbsp;·&nbsp; 2026-05-24 → 2026-06-22
+🔥 **Daily activity** &nbsp;·&nbsp; 2026-05-25 → 2026-06-23
 
 <img src="assets/activity.svg" alt="30-day activity calendar" width="320">
 
