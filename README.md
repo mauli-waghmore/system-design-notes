@@ -21,7 +21,7 @@
 <!-- STATS:START -->
 <div align="center">
 
-🧠 **3** concepts &nbsp;·&nbsp; 🏗️ **0** designs &nbsp;·&nbsp; 🖼️ **3** diagrams &nbsp;·&nbsp; ✅ **3** complete &nbsp;·&nbsp; 🔥 **2**-day streak &nbsp;·&nbsp; 🏆 **2** longest &nbsp;·&nbsp; 🗓️ **2** / 30 active
+🧠 **3** concepts &nbsp;·&nbsp; 🏗️ **0** designs &nbsp;·&nbsp; 🖼️ **3** diagrams &nbsp;·&nbsp; ✅ **3** complete &nbsp;·&nbsp; 🔥 **3**-day streak &nbsp;·&nbsp; 🏆 **3** longest &nbsp;·&nbsp; 🗓️ **3** / 30 active
 
 🔥 **Daily activity** &nbsp;·&nbsp; 2026-05-26 → 2026-06-24
 
@@ -78,7 +78,7 @@ xychart-beta
       <td><a href="https://excalidraw.com/#url=https%3A%2F%2Fraw.githubusercontent.com%2Fmauli-waghmore%2Fsystem-design-notes%2Fmaster%2Fconcepts%2Fcapacity-planning-youtube-daily-storage.excalidraw">Capacity Planning: YouTube Daily Storage</a></td>
       <td>Visual canvas + explanation</td>
       <td align="center"><code>Complete</code></td>
-      <td align="center">-</td>
+      <td align="center">2026-06-24</td>
       <td><code>concepts/capacity-planning-youtube-daily-storage.excalidraw</code></td>
     </tr>
   </tbody>
