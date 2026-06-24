@@ -5,7 +5,7 @@
 ##### Deep system design understanding through Excalidraw-first concept notes and visual design walkthroughs.
 
 [![CI](https://img.shields.io/github/actions/workflow/status/mauli-waghmore/system-design-notes/ci.yml?style=flat-square&label=CI&logo=github&logoColor=white)](https://github.com/mauli-waghmore/system-design-notes/actions/workflows/ci.yml)
-[![Concepts](https://img.shields.io/badge/Concepts-2-blue?style=flat-square)](#-concept-index)
+[![Concepts](https://img.shields.io/badge/Concepts-3-blue?style=flat-square)](#-concept-index)
 [![Designs](https://img.shields.io/badge/Designs-0-success?style=flat-square)](#-design-problem-index)
 [![Excalidraw](https://img.shields.io/badge/Diagrams-Excalidraw-6965DB?style=flat-square)](https://excalidraw.com)
 [![License](https://img.shields.io/badge/License-MIT-3DA639?style=flat-square)](LICENSE)
@@ -21,9 +21,9 @@
 <!-- STATS:START -->
 <div align="center">
 
-🧠 **2** concepts &nbsp;·&nbsp; 🏗️ **0** designs &nbsp;·&nbsp; 🖼️ **2** diagrams &nbsp;·&nbsp; ✅ **2** complete &nbsp;·&nbsp; 🔥 **2**-day streak &nbsp;·&nbsp; 🏆 **2** longest &nbsp;·&nbsp; 🗓️ **2** / 30 active
+🧠 **3** concepts &nbsp;·&nbsp; 🏗️ **0** designs &nbsp;·&nbsp; 🖼️ **3** diagrams &nbsp;·&nbsp; ✅ **3** complete &nbsp;·&nbsp; 🔥 **2**-day streak &nbsp;·&nbsp; 🏆 **2** longest &nbsp;·&nbsp; 🗓️ **2** / 30 active
 
-🔥 **Daily activity** &nbsp;·&nbsp; 2026-05-25 → 2026-06-23
+🔥 **Daily activity** &nbsp;·&nbsp; 2026-05-26 → 2026-06-24
 
 <img src="assets/activity.svg" alt="30-day activity calendar" width="320">
 
@@ -34,9 +34,9 @@
 xychart-beta
     title "Progress by lane"
     x-axis ["Concepts", "Problems"]
-    y-axis "Items" 0 --> 3
-    bar [2, 0]
-    bar [2, 0]
+    y-axis "Items" 0 --> 4
+    bar [3, 0]
+    bar [3, 0]
 ```
 <!-- STATS:END -->
 
@@ -72,6 +72,14 @@ xychart-beta
       <td align="center"><code>Complete</code></td>
       <td align="center">2026-06-23</td>
       <td><code>concepts/horizontal-vs-vertical-scaling.excalidraw</code></td>
+    </tr>
+    <tr>
+      <td align="center">03</td>
+      <td><a href="https://excalidraw.com/#url=https%3A%2F%2Fraw.githubusercontent.com%2Fmauli-waghmore%2Fsystem-design-notes%2Fmaster%2Fconcepts%2Fcapacity-planning-youtube-daily-storage.excalidraw">Capacity Planning: YouTube Daily Storage</a></td>
+      <td>Visual canvas + explanation</td>
+      <td align="center"><code>Complete</code></td>
+      <td align="center">-</td>
+      <td><code>concepts/capacity-planning-youtube-daily-storage.excalidraw</code></td>
     </tr>
   </tbody>
 </table>
