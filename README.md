@@ -5,7 +5,7 @@
 ##### Deep system design understanding through Excalidraw-first concept notes and visual design walkthroughs.
 
 [![CI](https://img.shields.io/github/actions/workflow/status/mauli-waghmore/system-design-notes/ci.yml?style=flat-square&label=CI&logo=github&logoColor=white)](https://github.com/mauli-waghmore/system-design-notes/actions/workflows/ci.yml)
-[![Concepts](https://img.shields.io/badge/Concepts-4-blue?style=flat-square)](#-concept-index)
+[![Concepts](https://img.shields.io/badge/Concepts-5-blue?style=flat-square)](#-concept-index)
 [![Designs](https://img.shields.io/badge/Designs-0-success?style=flat-square)](#-design-problem-index)
 [![Excalidraw](https://img.shields.io/badge/Diagrams-Excalidraw-6965DB?style=flat-square)](https://excalidraw.com)
 [![License](https://img.shields.io/badge/License-MIT-3DA639?style=flat-square)](LICENSE)
@@ -21,9 +21,9 @@
 <!-- STATS:START -->
 <div align="center">
 
-🧠 **4** concepts &nbsp;·&nbsp; 🏗️ **0** designs &nbsp;·&nbsp; 🖼️ **4** diagrams &nbsp;·&nbsp; ✅ **4** complete &nbsp;·&nbsp; 🔥 **4**-day streak &nbsp;·&nbsp; 🏆 **4** longest &nbsp;·&nbsp; 🗓️ **4** / 30 active
+🧠 **5** concepts &nbsp;·&nbsp; 🏗️ **0** designs &nbsp;·&nbsp; 🖼️ **5** diagrams &nbsp;·&nbsp; ✅ **5** complete &nbsp;·&nbsp; 🔥 **5**-day streak &nbsp;·&nbsp; 🏆 **5** longest &nbsp;·&nbsp; 🗓️ **5** / 30 active
 
-🔥 **Daily activity** &nbsp;·&nbsp; 2026-05-27 → 2026-06-25
+🔥 **Daily activity** &nbsp;·&nbsp; 2026-05-28 → 2026-06-26
 
 <img src="assets/activity.svg" alt="30-day activity calendar" width="320">
 
@@ -34,9 +34,9 @@
 xychart-beta
     title "Progress by lane"
     x-axis ["Concepts", "Problems"]
-    y-axis "Items" 0 --> 5
-    bar [4, 0]
-    bar [4, 0]
+    y-axis "Items" 0 --> 6
+    bar [5, 0]
+    bar [5, 0]
 ```
 <!-- STATS:END -->
 
@@ -88,6 +88,14 @@ xychart-beta
       <td align="center"><code>Complete</code></td>
       <td align="center">2026-06-25</td>
       <td><code>concepts/http-and-https-protocols.excalidraw</code></td>
+    </tr>
+    <tr>
+      <td align="center">05</td>
+      <td><a href="https://excalidraw.com/#url=https%3A%2F%2Fraw.githubusercontent.com%2Fmauli-waghmore%2Fsystem-design-notes%2Fmaster%2Fconcepts%2Finternet-tcp-ip-stack.excalidraw">What Is The Internet TCP/IP Stack?</a></td>
+      <td>Visual canvas + explanation</td>
+      <td align="center"><code>Complete</code></td>
+      <td align="center">2026-06-26</td>
+      <td><code>concepts/internet-tcp-ip-stack.excalidraw</code></td>
     </tr>
   </tbody>
 </table>
