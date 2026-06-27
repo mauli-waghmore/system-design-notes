@@ -5,7 +5,7 @@
 ##### Deep system design understanding through Excalidraw-first concept notes and visual design walkthroughs.
 
 [![CI](https://img.shields.io/github/actions/workflow/status/mauli-waghmore/system-design-notes/ci.yml?style=flat-square&label=CI&logo=github&logoColor=white)](https://github.com/mauli-waghmore/system-design-notes/actions/workflows/ci.yml)
-[![Concepts](https://img.shields.io/badge/Concepts-5-blue?style=flat-square)](#-concept-index)
+[![Concepts](https://img.shields.io/badge/Concepts-6-blue?style=flat-square)](#-concept-index)
 [![Designs](https://img.shields.io/badge/Designs-0-success?style=flat-square)](#-design-problem-index)
 [![Excalidraw](https://img.shields.io/badge/Diagrams-Excalidraw-6965DB?style=flat-square)](https://excalidraw.com)
 [![License](https://img.shields.io/badge/License-MIT-3DA639?style=flat-square)](LICENSE)
@@ -21,9 +21,9 @@
 <!-- STATS:START -->
 <div align="center">
 
-🧠 **5** concepts &nbsp;·&nbsp; 🏗️ **0** designs &nbsp;·&nbsp; 🖼️ **5** diagrams &nbsp;·&nbsp; ✅ **5** complete &nbsp;·&nbsp; 🔥 **5**-day streak &nbsp;·&nbsp; 🏆 **5** longest &nbsp;·&nbsp; 🗓️ **5** / 30 active
+🧠 **6** concepts &nbsp;·&nbsp; 🏗️ **0** designs &nbsp;·&nbsp; 🖼️ **6** diagrams &nbsp;·&nbsp; ✅ **6** complete &nbsp;·&nbsp; 🔥 **6**-day streak &nbsp;·&nbsp; 🏆 **6** longest &nbsp;·&nbsp; 🗓️ **6** / 30 active
 
-🔥 **Daily activity** &nbsp;·&nbsp; 2026-05-28 → 2026-06-26
+🔥 **Daily activity** &nbsp;·&nbsp; 2026-05-29 → 2026-06-27
 
 <img src="assets/activity.svg" alt="30-day activity calendar" width="320">
 
@@ -34,9 +34,9 @@
 xychart-beta
     title "Progress by lane"
     x-axis ["Concepts", "Problems"]
-    y-axis "Items" 0 --> 6
-    bar [5, 0]
-    bar [5, 0]
+    y-axis "Items" 0 --> 7
+    bar [6, 0]
+    bar [6, 0]
 ```
 <!-- STATS:END -->
 
@@ -96,6 +96,14 @@ xychart-beta
       <td align="center"><code>Complete</code></td>
       <td align="center">2026-06-26</td>
       <td><code>concepts/internet-tcp-ip-stack.excalidraw</code></td>
+    </tr>
+    <tr>
+      <td align="center">06</td>
+      <td><a href="https://excalidraw.com/#url=https%3A%2F%2Fraw.githubusercontent.com%2Fmauli-waghmore%2Fsystem-design-notes%2Fmaster%2Fconcepts%2Fwhat-happens-when-you-enter-google-com.excalidraw">What Happens When You Enter Google.com?</a></td>
+      <td>Visual canvas + explanation</td>
+      <td align="center"><code>Complete</code></td>
+      <td align="center">2026-06-27</td>
+      <td><code>concepts/what-happens-when-you-enter-google-com.excalidraw</code></td>
     </tr>
   </tbody>
 </table>
